@@ -16,7 +16,10 @@ print(banner)
 
 def calc():
     global Num_1
-    Num_1 = float(input('Напиши число\n> '))
+    try:  
+        Num_1 = float(input('Напиши число\n> '))
+    except:
+        calc()
     calc2()
     
 def calc2():
@@ -26,8 +29,10 @@ def calc2():
         calc()
     elif act >= '7':
         calc2()
-    Num_2 = float(input('Напиши второе число\n> '))
-
+    try:  
+        Num_2 = float(input('Напиши второе число\n> '))
+    except:
+        calc2()
 
     if act == '1':
         print('Ответ: ', Num_1 + Num_2) 

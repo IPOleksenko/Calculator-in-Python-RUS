@@ -52,3 +52,4 @@ def calc2():
 if __name__ == '__main__':
     while True:
      calc()
+#Author: IPOleksenko

@@ -1,0 +1,2 @@
+# Python calculator
+# Author: IPOleksenko
